@@ -19,14 +19,14 @@ class DeveloperNameBtn extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 13),
         child: SizedBox(
           width: context.width < DeviceType.ipad.getMaxWidth()
-              ? context.width * .5
-              : context.width * .2,
+              ? context.width * 0.5
+              : context.width * 0.3,
           child: Row(
             children: [
               Image.asset('assets/images/palestine_flag.png'),
               const SizedBox(width: 10),
               Text(
-                AppStrings.developerName,
+                AppStrings.titleName,
                 style: AppStyles.s20,
               ),
             ],

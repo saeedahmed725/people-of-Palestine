@@ -19,7 +19,7 @@ class IntroText extends StatelessWidget {
             ? CrossAxisAlignment.center
             : CrossAxisAlignment.start,
         children: [
-          SizedBox(height: 300,),
+          const SizedBox(height: 200),
           Text(
             AppStrings.helloIM,
             style: context.width < DeviceType.ipad.getMaxWidth()
@@ -30,29 +30,28 @@ class IntroText extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            AppStrings.developerName,
+            AppStrings.titleName,
             style: context.width < DeviceType.ipad.getMaxWidth()
                 ? AppStyles.s24
                 : AppStyles.s52,
             textAlign: _getTextAlign(context.width),
             softWrap: true,
           ),
-          const SizedBox(height: 12),
-          // SizedBox(
-          //   width: context.width < DeviceType.mobile.getMaxWidth()
-          //       ? context.width - 20
-          //       : context.width / 2.5,
-          //   // child: Text(
-          //   //   AppStrings.introMsg,
-          //   //   style: context.width < DeviceType.ipad.getMaxWidth()
-          //   //       ? AppStyles.s14
-          //   //       : AppStyles.s18,
-          //   //   textAlign: _getTextAlign(context.width),
-          //   //   softWrap: true,
-          //   // ),
-          // ),
-          // const SizedBox(height: 30),
-          // const IntoActions(),
+          SizedBox(
+            width: context.width < DeviceType.mobile.getMaxWidth()
+                ? context.width - 20
+                : context.width / 2.5,
+            child: Text(
+              AppStrings.introMsg,
+              style: context.width < DeviceType.ipad.getMaxWidth()
+                  ? AppStyles.s14
+                  : AppStyles.s18,
+              textAlign: _getTextAlign(context.width),
+              softWrap: true,
+            ),
+          ),
+          const SizedBox(height: 30),
+          const IntoActions(),
         ],
       ),
     );

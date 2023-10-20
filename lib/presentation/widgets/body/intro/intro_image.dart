@@ -11,21 +11,18 @@ class IntroImage extends StatelessWidget {
   Widget build(BuildContext context) {
     final responsiveSize = ResponsiveSize(
       deviceWidth: context.width,
-      mobileSize: context.width * .55,
+      mobileSize: context.width * .40,
       ipadSize: context.width * .36,
       smallScreenSize: context.width * .26,
     );
 
-    return Positioned(
-      right: 15,
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(1000),
-        child: Image.asset(
-          'assets/images/Al-Aqsa2.jpg',
-          fit: BoxFit.cover,
-          width: responsiveSize.getSize(),
-          height: responsiveSize.getSize(),
-        ),
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(1000),
+      child: Image.asset(
+        'assets/images/Al-Aqsa2.jpg',
+        fit: BoxFit.cover,
+        width: responsiveSize.getSize(),
+        height: responsiveSize.getSize(),
       ),
     );
   }

@@ -15,7 +15,7 @@ class AboutMeIntro extends StatelessWidget {
       children: [
         FittedBox(
           child: Text(
-            AppBarHeaders.aboutMe.getString(),
+            AppBarHeaders.stats.getString(),
             style: AppStyles.s32,
           ),
         ),

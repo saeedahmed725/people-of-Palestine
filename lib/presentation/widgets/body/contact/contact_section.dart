@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:people_of_palestine/core/utils/app_extensions.dart';
 
+
 import '../../../../core/utils/app_enums.dart';
-import 'contact_intro.dart';
 import 'contact_form.dart';
+import 'contact_intro.dart';
 
 class ContactSection extends StatelessWidget {
   const ContactSection({super.key});
@@ -11,7 +12,8 @@ class ContactSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 80),
+      padding: EdgeInsets.only(
+          bottom: 80, right: context.width * .03, left: context.width * .03),
       child: context.width > DeviceType.ipad.getMaxWidth()
           ? const Row(
               crossAxisAlignment: CrossAxisAlignment.start,

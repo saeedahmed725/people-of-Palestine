@@ -14,7 +14,7 @@ class IntoActions extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Widget> actions = [
       CustomButton(
-        label: AppBarHeaders.aboutMe.getString(),
+        label: AppBarHeaders.stats.getString(),
         icon: Icons.person,
         backgroundColor: AppColors.primaryColor,
         onPressed: () {
@@ -26,7 +26,7 @@ class IntoActions extends StatelessWidget {
           ? const SizedBox(height: 6)
           : const SizedBox(width: 32),
       CustomButton(
-        label: AppBarHeaders.projects.getString(),
+        label: AppBarHeaders.stories.getString(),
         icon: Icons.remove_red_eye,
         borderColor: AppColors.primaryColor,
         onPressed: () {

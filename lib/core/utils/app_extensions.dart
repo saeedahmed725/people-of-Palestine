@@ -5,14 +5,14 @@ import 'app_enums.dart';
 extension AppBarHeaderExtension on AppBarHeaders {
   String getString() {
     switch (this) {
-      case AppBarHeaders.home:
-        return 'Home';
-      case AppBarHeaders.aboutMe:
-        return 'About';
-      case AppBarHeaders.projects:
-        return 'Videos';
-      case AppBarHeaders.contact:
-        return 'For donation';
+      case AppBarHeaders.history:
+        return 'History of the Story';
+      case AppBarHeaders.stats:
+        return 'Stats';
+      case AppBarHeaders.stories:
+        return 'Stories Timeline';
+      case AppBarHeaders.palatines:
+        return 'Speaks of Palatine';
     }
   }
 
@@ -45,7 +45,7 @@ extension DeviceTypeExtension on DeviceType {
       case DeviceType.mobile:
         return 480;
       case DeviceType.ipad:
-        return 768;
+        return 780;
       case DeviceType.smallScreenLaptop:
         return 1024;
       case DeviceType.largeScreenDesktop:

@@ -14,7 +14,8 @@ class AboutMeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 80),
+      padding: EdgeInsets.only(
+          bottom: 80, right: context.width * .03, left: context.width * .03),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
